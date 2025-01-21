@@ -80,9 +80,9 @@ nav ul li {
 .principal-esq {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
-    height: 100%;
+    height: 90%;
     width: 100%;
     text-align: center;
 }
@@ -118,6 +118,7 @@ nav ul li {
     align-items: center;
     background-color: transparent;
     color: #3273f5;
+    margin-left: 50px;
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -133,16 +134,16 @@ nav ul li {
 .img-ong {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     box-shadow: 1px 2px 2px black;
     border-radius: 10px;
-    margin: 40px;
-    width: 564px;
+    margin: 10px;
+    width: 560px;
     height: 396px;
 
     & img {
-        padding: 20px;
+        padding: 30px;
     }
 }
 
@@ -155,9 +156,9 @@ nav ul li {
     border: 1px;
     box-shadow: 1px 2px 2px black;
     border-radius: 10px;
-    width: 965px;
-    height: 396px;
-    margin: 40px;
+    width: 725px;
+    height: 400px;
+    margin: 10px;
     margin-bottom: 8px;
 
     & .conteiner-info {
@@ -165,8 +166,8 @@ nav ul li {
         justify-content: space-between;
         align-items: start;
         flex-direction: column;
-        padding: 20px;
-        width: 100%;
+        padding: 10px;
+        width: 95%;
         height: 100%;
     }
 
@@ -222,7 +223,7 @@ nav ul li {
             height: 40px;
             border-radius: 50%;
             cursor: pointer;
-            margin: 10px;
+            margin: 20px;
             padding: 8px;
         }
 
@@ -245,6 +246,7 @@ nav ul li {
         width: 100%;
         height: 30px;
         gap: 100px;
+        margin-bottom: 20px;
 
 
         & .doacao {
@@ -276,9 +278,9 @@ nav ul li {
     flex-wrap: wrap;
     box-shadow: 1px 2px 2px black;
     border-radius: 10px;
-    margin: 40px;
+    margin: 10px;
     padding: 15px;
-    width: 564px;
+    width: 560px;
     height: 396px;
     gap: 30px;
 
@@ -316,9 +318,9 @@ nav ul li {
     border: 1px;
     box-shadow: 1px 2px 2px black;
     border-radius: 10px;
-    margin: 40px;
+    margin: 10px;
     padding: 15px;
-    width: 965px;
+    width: 720px;
     height: 396px;
 
 
@@ -334,9 +336,9 @@ nav ul li {
     flex-wrap: wrap;
     box-shadow: 1px 2px 2px black;
     border-radius: 10px;
-    margin: 40px;
+    margin: 10px;
     padding: 15px;
-    width: 564px;
+    width: 560px;
     height: 396px;
     gap: 30px;
 
@@ -388,9 +390,9 @@ nav ul li {
     flex-wrap: wrap;
     box-shadow: 1px 2px 2px black;
     border-radius: 10px;
-    margin: 40px;
+    margin: 10px;
     padding: 15px;
-    width: 965px;
+    width: 720px;
     height: 396px;
     gap: 30px;
 
@@ -401,7 +403,7 @@ nav ul li {
         box-shadow: 1px 1px 1px 1px black;
         border-radius: 10px;
         padding: 10px;
-        width: 450px;
+        width: 290px;
         height: 120px;
 
         & img {
@@ -452,9 +454,9 @@ nav ul li {
     box-shadow: 1px 2px 2px black;
     border-radius: 10px;
     padding: 15px;
-    margin: 40px;
-    width: 1600px;
-    height: 396px;
+    margin: 10px;
+    width: 1300px;
+    height: 400px;
     gap: 20px;
 
     & .conteiner-noticia {
@@ -463,6 +465,7 @@ nav ul li {
         align-items: center;
         box-shadow: 1px 1px 1px 1px black;
         border-radius: 10px;
+        width: 620px;
     }
 
     & .info-noticia {
@@ -471,7 +474,7 @@ nav ul li {
         align-items: start;
         flex-direction: column;
         margin: 10px;
-        width: 530px;
+        width:300px;
         height: 250px;
 
         & button {
@@ -479,6 +482,7 @@ nav ul li {
             padding: 10px;
             font-size: 1.1rem;
             border-radius: 10px;
+            margin-bottom: 40px;
 
         }
 
@@ -508,8 +512,8 @@ nav ul li {
     border-radius: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    margin: 40px;
-    width: 1600px;
+    margin: 10px;
+    width: 1300px;
     height: 396px;
 
     & .conteudo {
