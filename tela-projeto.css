@@ -6,12 +6,12 @@
     align-items: center;
     gap: 20px;
 }
- 
+
 #busca {
     display: flex;
     align-items: center;
     padding: 0 10px;
-    border: 2px solid #E3B652; 
+    border: 2px solid #E3B652;
     border-radius: 50px;
     height: 40px;
     width: 40px;
@@ -20,11 +20,11 @@
     position: relative;
     transition: width .3s ease-out;
 }
- 
+
 #busca.ativo {
     width: 230px;
 }
- 
+
 #busca input {
     height: 100%;
     border: none;
@@ -32,11 +32,11 @@
     color: aliceblue;
     background: none;
 }
- 
+
 #busca input::placeholder {
     color: slategrey;
 }
- 
+
 #busca button {
     color: var(--cor-amarelo);
     font-size: 20px;
@@ -525,7 +525,7 @@ nav ul li {
         align-items: start;
         flex-direction: column;
         margin: 10px;
-        width:300px;
+        width: 300px;
         height: 250px;
 
         & button {
@@ -545,6 +545,7 @@ nav ul li {
         align-items: center;
         width: 100%;
     }
+
     & .img-noticia {
         background-color: #a39c9c;
         width: 200px;
@@ -625,14 +626,43 @@ nav ul li {
                 align-items: center;
                 background-color: transparent;
                 border: none;
+                cursor: pointer;
+                text-decoration: none;
+            }
 
-                & .seta-retorno {
-                    width: 50px;
-                }
+            .btn::after {
+                font-size: 32px;
+                font-weight: bold;
+                transition: margin-top ease-in 0.5s;
+            }
+
+            .btn:hover::after {
+                margin-top: -8px;
             }
         }
     }
-
+}
+.fundo-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+fundo-popup.ativo {
+    opacity: 1;
+    visibility: visible;
 }
 
+.fundo-popup.ativo .popup {
+    margin-top: 0;
+}
 /* Fim do conteudo desta page */
