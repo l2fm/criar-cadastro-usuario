@@ -66,225 +66,222 @@
                             Voluntário</button>
                     </div>
 
-                    <script>
-                        function showDoacaoPopup() {
-                            var popup = document.getElementById('btn_doacao');
-                            popup.classList.toggle('show');
-                        }
-
-                        function showVoluntarioPopup() {
-                            var popup = document.getElementById('btn_voluntario');
-                            popup.classList.toggle('show');
-                        }
-                    </script>
-
+                    <dialog id="popup_doacao">
+                        <p>Doação</p>
+                        <button class="doacao" onclick="closePopup('popup_doacao')">Fechar</button>
+                    </dialog>
+                    <dialog id="popup_voluntario">
+                        <p>Voluntários</p>
+                        <button class="voluntario" onclick="closePopup('popup_voluntario')">Fechar</button>
+                    </dialog>
                 </div>
             </div>
-            <div class="doadores">
+        
+        <div class="doadores">
+            <div class="header-conteiner">
+                <img src="imgs/money.png" alt="Icon de cédulas de dinheiro">
+                <h3>Doadores</h3>
+            </div>
+            <div class="doador">
+                <div class="icon-name">
+                    <h4>J</h4>
+                </div>
+                <p>João</p>
+                <p>R$ 102</p>
+            </div>
+            <div class="doador">
+                <div class="icon-name">
+                    <h4>Z</h4>
+                </div>
+                <p>Zoio</p>
+                <p>R$ 102</p>
+            </div>
+            <div class="doador">
+                <div class="icon-name">
+                    <h4>M</h4>
+                </div>
+                <p>Maria</p>
+                <p>R$ 102</p>
+            </div>
+            <div class="doador">
+                <div class="icon-name">
+                    <h4>A</h4>
+                </div>
+                <p>Antonia</p>
+                <p>R$ 102</p>
+            </div>
+            <div class="doador">
+                <div class="icon-name">
+                    <h4>P</h4>
+                </div>
+                <p>Pedro</p>
+                <p>R$ 102</p>
+            </div>
+            <button class="ver-todos">VER TODOS</button>
+        </div>
+        <div class="sobre">
+            <div>
                 <div class="header-conteiner">
-                    <img src="imgs/money.png" alt="Icon de cédulas de dinheiro">
-                    <h3>Doadores</h3>
+                    <img src="imgs/interrogaction.png" alt="Icon de ponto de interrogação">
+                    <h3>Sobre</h3>
                 </div>
-                <div class="doador">
-                    <div class="icon-name">
-                        <h4>J</h4>
-                    </div>
-                    <p>João</p>
-                    <p>R$ 102</p>
-                </div>
-                <div class="doador">
-                    <div class="icon-name">
-                        <h4>Z</h4>
-                    </div>
-                    <p>Zoio</p>
-                    <p>R$ 102</p>
-                </div>
-                <div class="doador">
-                    <div class="icon-name">
-                        <h4>M</h4>
-                    </div>
-                    <p>Maria</p>
-                    <p>R$ 102</p>
-                </div>
-                <div class="doador">
-                    <div class="icon-name">
-                        <h4>A</h4>
-                    </div>
-                    <p>Antonia</p>
-                    <p>R$ 102</p>
-                </div>
-                <div class="doador">
-                    <div class="icon-name">
-                        <h4>P</h4>
-                    </div>
-                    <p>Pedro</p>
-                    <p>R$ 102</p>
-                </div>
-                <button class="ver-todos">VER TODOS</button>
+                <p class="info-sobre">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium officiis
+                    incidunt magni et
+                    recusandae ipsam, pariatur hic illo in nesciunt consectetur, vel obcaecati maiores a dolorum
+                    nam,
+                    odio
+                    tempora ipsa!</p>
             </div>
-            <div class="sobre">
-                <div>
-                    <div class="header-conteiner">
-                        <img src="imgs/interrogaction.png" alt="Icon de ponto de interrogação">
-                        <h3>Sobre</h3>
-                    </div>
-                    <p class="info-sobre">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium officiis
-                        incidunt magni et
-                        recusandae ipsam, pariatur hic illo in nesciunt consectetur, vel obcaecati maiores a dolorum
-                        nam,
-                        odio
-                        tempora ipsa!</p>
-                </div>
-                <p class="data-criacao"><strong>ONG criada em:</strong> 12/04/2023</p>
+            <p class="data-criacao"><strong>ONG criada em:</strong> 12/04/2023</p>
+        </div>
+        <div class="voluntarios">
+            <div class="header-conteiner">
+                <img src="imgs/hug.png" alt="Icon de abraço">
+                <h3>Voluntários</h3>
             </div>
-            <div class="voluntarios">
-                <div class="header-conteiner">
-                    <img src="imgs/hug.png" alt="Icon de abraço">
-                    <h3>Voluntários</h3>
+            <div class="voluntario">
+                <div class="icon-name">
+                    <h4>M</h4>
                 </div>
-                <div class="voluntario">
-                    <div class="icon-name">
-                        <h4>M</h4>
-                    </div>
-                    <div class="info-voluntario">
-                        <h3>Marcos</h3>
-                        <p>Apoiando o <strong>Projeto tal</strong></p>
-                    </div>
-                </div>
-                <div class="voluntario">
-                    <div class="icon-name">
-                        <h4>J</h4>
-                    </div>
-                    <div class="info-voluntario">
-                        <h3>João</h3>
-                        <p>Apoiando o <strong>Projeto tal</strong></p>
-                    </div>
-                </div>
-                <div class="voluntario">
-                    <div class="icon-name">
-                        <h4>C</h4>
-                    </div>
-                    <div class="info-voluntario">
-                        <h3>Célia</h3>
-                        <p>Apoiando o <strong>Projeto tal</strong></p>
-                    </div>
-                </div>
-                <div class="voluntario">
-                    <div class="icon-name">
-                        <h4>E</h4>
-                    </div>
-                    <div class="info-voluntario">
-                        <h3>Eren</h3>
-                        <p>Apoiando o <strong>Projeto tal</strong></p>
-                    </div>
-                </div>
-                <div class="voluntario">
-                    <div class="icon-name">
-                        <h4>L</h4>
-                    </div>
-                    <div class="info-voluntario">
-                        <h3>Levi</h3>
-                        <p>Apoiando o <strong>Projeto tal</strong></p>
-                    </div>
-                </div>
-                <button class="ver-todos">VER TODOS</button>
-            </div>
-            <div class="projetos">
-                <div class="header-conteiner">
-                    <img src="imgs/lamp.png" alt="Icon de Lampada">
-                    <h3>Projetos</h3>
-                </div>
-                <div class="projeto">
-                    <img src="" alt="Imagem do projeto da ong">
-                    <div class="info-projeto">
-                        <h4 class="nome-projeto">Nome do Projeto</h4>
-                        <div class="progress">
-                            <p>76% <progress value="76" max="100"></progress></p>
-                        </div>
-                        <p>24 Doações Recebidas</p>
-                    </div>
-                </div>
-                <div class="projeto">
-                    <img src="" alt="Imagem do projeto da ong">
-                    <div class="info-projeto">
-                        <h4 class="nome-projeto">Nome do Projeto</h4>
-                        <div class="progress">
-                            <p>40% <progress value="40" max="100"></progress></p>
-                        </div>
-                        <p>24 Doações Recebidas</p>
-                    </div>
-                </div>
-                <div class="projeto">
-                    <img src="" alt="Imagem do projeto da ong">
-                    <div class="info-projeto">
-                        <h4 class="nome-projeto">Nome do Projeto</h4>
-                        <div class="progress">
-                            <p>60% <progress value="60" max="100"></progress></p>
-                        </div>
-                        <p>24 Doações Recebidas</p>
-                    </div>
-                </div>
-                <button class="ver-todos">VER TODOS</button>
-            </div>
-            <div class="noticias">
-                <div class="header-conteiner">
-                    <img src="imgs/noise.png" alt="Icon de Autofalante">
-                    <h3>Notícias</h3>
-                </div>
-                <div class="conteiner-noticia">
-                    <div class="info-noticia">
-                        <h4>Titulo da Matéria</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum accusamus eum mollitia
-                            recusandae
-                            sed repellat exercitationem quasi? Libero eius impedit excepturi adipisci autem mollitia
-                            totam,
-                            reiciendis laudantium. At, neque obcaecati.</p>
-                        <div>
-                            <p>Por: ONG Tal</p>
-                            <button>Leia Mais</button>
-                        </div>
-                    </div>
-                    <img class="img-noticia" src="" alt="Imagem da noticias">
-                </div>
-                <div class="conteiner-noticia">
-                    <div class="info-noticia">
-                        <h4>Titulo da Matéria</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum accusamus eum mollitia
-                            recusandae
-                            sed repellat exercitationem quasi? Libero eius impedit excepturi adipisci autem mollitia
-                            totam,
-                            reiciendis laudantium. At, neque obcaecati.</p>
-                        <div>
-                            <p>Por: ONG Tal</p>
-                            <button>Leia Mais</button>
-                        </div>
-                    </div>
-                    <img class="img-noticia" src="" alt="Imagem da noticias">
+                <div class="info-voluntario">
+                    <h3>Marcos</h3>
+                    <p>Apoiando o <strong>Projeto tal</strong></p>
                 </div>
             </div>
-            <div class="contato">
-                <div class="header-conteiner">
-                    <img src="imgs/noise.png" alt="">
-                    <h3>Contato</h3>
+            <div class="voluntario">
+                <div class="icon-name">
+                    <h4>J</h4>
                 </div>
-                <p class="conteudo">Entre em contato com os responsáveis dessa ONG para mais informações</p>
-                <div class="btns-contato">
-                    <button class="btn-telefone">
-                        <img class="icon-telephone" src="imgs/telephone.png" alt="Icon de telefone">
-                        <p>Telefone: <strong>(00) 00000-0000</strong></p>
+                <div class="info-voluntario">
+                    <h3>João</h3>
+                    <p>Apoiando o <strong>Projeto tal</strong></p>
+                </div>
+            </div>
+            <div class="voluntario">
+                <div class="icon-name">
+                    <h4>C</h4>
+                </div>
+                <div class="info-voluntario">
+                    <h3>Célia</h3>
+                    <p>Apoiando o <strong>Projeto tal</strong></p>
+                </div>
+            </div>
+            <div class="voluntario">
+                <div class="icon-name">
+                    <h4>E</h4>
+                </div>
+                <div class="info-voluntario">
+                    <h3>Eren</h3>
+                    <p>Apoiando o <strong>Projeto tal</strong></p>
+                </div>
+            </div>
+            <div class="voluntario">
+                <div class="icon-name">
+                    <h4>L</h4>
+                </div>
+                <div class="info-voluntario">
+                    <h3>Levi</h3>
+                    <p>Apoiando o <strong>Projeto tal</strong></p>
+                </div>
+            </div>
+            <button class="ver-todos">VER TODOS</button>
+        </div>
+        <div class="projetos">
+            <div class="header-conteiner">
+                <img src="imgs/lamp.png" alt="Icon de Lampada">
+                <h3>Projetos</h3>
+            </div>
+            <div class="projeto">
+                <img src="" alt="Imagem do projeto da ong">
+                <div class="info-projeto">
+                    <h4 class="nome-projeto">Nome do Projeto</h4>
+                    <div class="progress">
+                        <p>76% <progress value="76" max="100"></progress></p>
+                    </div>
+                    <p>24 Doações Recebidas</p>
+                </div>
+            </div>
+            <div class="projeto">
+                <img src="" alt="Imagem do projeto da ong">
+                <div class="info-projeto">
+                    <h4 class="nome-projeto">Nome do Projeto</h4>
+                    <div class="progress">
+                        <p>40% <progress value="40" max="100"></progress></p>
+                    </div>
+                    <p>24 Doações Recebidas</p>
+                </div>
+            </div>
+            <div class="projeto">
+                <img src="" alt="Imagem do projeto da ong">
+                <div class="info-projeto">
+                    <h4 class="nome-projeto">Nome do Projeto</h4>
+                    <div class="progress">
+                        <p>60% <progress value="60" max="100"></progress></p>
+                    </div>
+                    <p>24 Doações Recebidas</p>
+                </div>
+            </div>
+            <button class="ver-todos">VER TODOS</button>
+        </div>
+        <div class="noticias">
+            <div class="header-conteiner">
+                <img src="imgs/noise.png" alt="Icon de Autofalante">
+                <h3>Notícias</h3>
+            </div>
+            <div class="conteiner-noticia">
+                <div class="info-noticia">
+                    <h4>Titulo da Matéria</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum accusamus eum mollitia
+                        recusandae
+                        sed repellat exercitationem quasi? Libero eius impedit excepturi adipisci autem mollitia
+                        totam,
+                        reiciendis laudantium. At, neque obcaecati.</p>
+                    <div>
+                        <p>Por: ONG Tal</p>
+                        <button>Leia Mais</button>
+                    </div>
+                </div>
+                <img class="img-noticia" src="" alt="Imagem da noticias">
+            </div>
+            <div class="conteiner-noticia">
+                <div class="info-noticia">
+                    <h4>Titulo da Matéria</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum accusamus eum mollitia
+                        recusandae
+                        sed repellat exercitationem quasi? Libero eius impedit excepturi adipisci autem mollitia
+                        totam,
+                        reiciendis laudantium. At, neque obcaecati.</p>
+                    <div>
+                        <p>Por: ONG Tal</p>
+                        <button>Leia Mais</button>
+                    </div>
+                </div>
+                <img class="img-noticia" src="" alt="Imagem da noticias">
+            </div>
+        </div>
+        <div class="contato">
+            <div class="header-conteiner">
+                <img src="imgs/noise.png" alt="">
+                <h3>Contato</h3>
+            </div>
+            <p class="conteudo">Entre em contato com os responsáveis dessa ONG para mais informações</p>
+            <div class="btns-contato">
+                <button class="btn-telefone">
+                    <img class="icon-telephone" src="imgs/telephone.png" alt="Icon de telefone">
+                    <p>Telefone: <strong>(00) 00000-0000</strong></p>
+                </button>
+                <div class="btns-email-retorno">
+                    <button class="btn-email">
+                        <img class="icon-envelope" src="imgs/email.png" alt="Icon de envelope">
+                        <p>Email: <strong>ong@projeto.com</strong></p>
                     </button>
-                    <div class="btns-email-retorno">
-                        <button class="btn-email">
-                            <img class="icon-envelope" src="imgs/email.png" alt="Icon de envelope">
-                            <p>Email: <strong>ong@projeto.com</strong></p>
-                        </button>
-                        <button class="btn-seta" onclick="voltarParaTelaInicial()">
-                            <img src="imgs/up-arrow.png" alt="Up Arrow">
-                        </button>
-                    </div>
+                    <button class="btn-seta" onclick="voltarParaTelaInicial()">
+                        <img src="imgs/up-arrow.png" alt="Up Arrow">
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <script src="busca.js"></script>
     <script src="seta.js"></script>
