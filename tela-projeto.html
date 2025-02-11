@@ -16,28 +16,21 @@
 <body>
     <!-- Início cabeçalho -->
     <header>
-        <div id="logo">
-            <img src="images/logo.png" alt="">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Ongs</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Notícias</a></li>
-            </ul>
-        </nav>
-        <div id="header-direita">
-            <div id="nav-btn">
-                <div id="busca">
-                    <button id="btn-busca"><i id="icon-busca" class="fa-solid fa-search"></i></button>
-                    <input type="text" placeholder="Buscar">
-                </div>
+        <div class="container">
+            <div class="logo">
+                <h1>LOGO</h1>
             </div>
-            <div id="login">
-                <button id="btn-login">
-                    Login
-                </button>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Ongs</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Notícias</a></li>
+                </ul>
+            </nav>
+            <div class="btn-login">
+                <button class="btn" id="openPopup" onclick="loginPopup()">LOGIN</button>
+                <button onclick="menu_mobile()" id="hamburguer"></button>
             </div>
         </div>
     </header>
@@ -45,10 +38,12 @@
     <!-- Início DIV principal -->
     <div id="principal">
         <div class="principal-esq">
-
-
-            <div class="img-ong">
-                <img src="imgs/" alt="Imagem da ONG">
+            <div class="carousel">
+                <div class="carousel-imgs">
+                    <img src="imgs/ambiental.png" alt="" class="carousel-item">
+                    <img src="imgs/ong.png" class="carousel-item">
+                    <img src="" alt="" class="carousel-item">
+                </div>
             </div>
             <div class="info-ong">
                 <div class="conteiner-info">
@@ -56,6 +51,8 @@
                         <h3>NOME DA ONG</h3>
                         <p>TIPO DA ONG</p>
                     </div>
+
+
                     <p class="arrecadacao">Arrecadado: R$ 50.000</p>
                     <p>87 Doações Recebidas</p>
                     <div class="btn-favoritos-compartilhar">
@@ -274,11 +271,8 @@
             </div>
         </div>
     </div>
-    <script src="busca.js"></script>
-    <script src="seta.js"></script>
+    <script src="popup.js"></script>
     <!-- Fim DIV principal  -->
 </body>
 
 </html>
-<!-- <button class="btn-seta"><img i id="icon-seta" class="seta-retorno" src="imgs/up-arrow.png"
-        alt="Icon de seta para cima"></button> -->

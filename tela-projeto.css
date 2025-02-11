@@ -1,67 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-#nav-btn {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+:root {
+    --cor-principal: #1C3464;
+    --cor-principal-claro: #203866;
+    --cor-amarelo: #E3B652;
+    --cor-amarelo-hover: #cca44d;
+    --cor-azul: #45BEE6;
+    --fonte: "Poppins", serif;
 }
-
-#busca {
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    border: 2px solid #E3B652;
-    border-radius: 50px;
-    height: 40px;
-    width: 40px;
-    overflow: hidden;
-    gap: 15px;
-    position: relative;
-    transition: width .3s ease-out;
-}
-
-#busca.ativo {
-    width: 230px;
-}
-
-#busca input {
-    height: 100%;
-    border: none;
-    outline: none;
-    color: aliceblue;
-    background: none;
-}
-
-#busca input::placeholder {
-    color: slategrey;
-}
-
-#busca button {
-    color: var(--cor-amarelo);
-    font-size: 20px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin-left: -2px;
-}
-
-
-
-
-
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Poppins", serif;
+    scroll-behavior: smooth;
 }
-
 body {
-    background-color: #1C3464;
+    background-color: var(--cor-principal);
 }
-
 /* Inicio do cabeçalho */
 header {
     display: flex;
@@ -642,7 +599,7 @@ nav ul li {
         }
     }
 }
-.fundo-popup {
+#fundo-popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -657,12 +614,139 @@ nav ul li {
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-fundo-popup.ativo {
+#fundo-popup.ativo {
     opacity: 1;
     visibility: visible;
 }
 
-.fundo-popup.ativo .popup {
+#fundo-popup.ativo .popup {
     margin-top: 0;
 }
+
+
+.carousel {
+    width: 40%;
+    max-width: 60%;
+    overflow: hidden;
+    box-shadow: 1px 2px 2px black;
+    border-radius: 10px;
+    margin: 10px;
+    width: 560px;
+    height:390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-imgs {
+    
+    display: flex;
+    transition: transform 1s ease-in-out;
+    
+    & img {
+        width: 100%;
+        height: 50%;
+    }
+    
+    
+}
+
+.carousel-item {
+    
+    width: 100%;
+    height: 500%;
+    border-radius: 5px;
+    
+}
+/* popup */
+
+.popup ul li {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 10px;
+    width: fit-content;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: black;
+    list-style: none;
+    border-radius: 5px;
+    width: 180px;
+    background-color: #E3B652;
+    cursor: pointer;
+    color: #1C3464;
+}
+
+.popup ul li:hover {
+    filter: brightness(0.9);
+}
+
+.popup ul li a {
+    color: #1C3464;
+    text-decoration: none;
+}
+
+.popup img {
+    width: 200px;
+    transform: rotateY(180deg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.popup{
+    background-color:#1C3464;
+    border-radius: 15px;
+    display: flex;
+    padding: 40px 40px;
+    display: flex;
+    gap: 40px;
+    margin-top: 100%;
+    transition: .5s ease;
+    color: FFFFFF;
+    align-items: center;
+
+}
+.popup .msg {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    align-items: center;
+}
+.popup .msg ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.popup .msg .linha1 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+    font-size:25px;
+    color: black;
+}
+
+.popup .msg p {
+    font-size: 25px;
+    color: #007AFF;
+    
+}
+
+.popup img {
+    width: 300px;
+   
+}
+
+.btn-maistarde {
+    background-color:#1C3464;
+    border-radius: 5px;
+    color: aliceblue;
+    padding: 15px 36px;
+    margin-top: 50px;
+}
+/* fim popup */
 /* Fim do conteudo desta page */
