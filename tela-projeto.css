@@ -727,7 +727,8 @@ nav ul li {
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
     font-size:25px;
-    color: black;
+    color:5282E3;
+    margin: 10px;
 }
 
 .popup .msg p {

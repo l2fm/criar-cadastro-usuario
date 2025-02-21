@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>cadastro usuario</title>
+    <title>Página da ONG</title>
 </head>
 
 <body>
-    <!-- Início cabeçalho -->
+    <!-- Cabeçalho -->
     <header>
         <div class="container">
             <div class="logo">
@@ -22,37 +22,37 @@
             </div>
             <nav id="nav-bar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home.php">Home</a></li>
                     <li><a href="#">Ongs</a></li>
                     <li><a href="#">Projetos</a></li>
                     <li><a href="#">Notícias</a></li>
                 </ul>
             </nav>
             <div class="btn-login">
-                <button class="btn" id="openPopup" onclick="loginPopup()">LOGIN</button>
-                <button onclick="menu_mobile()" id="hamburguer"></button>
+                <button class="btn" id="btn-login">LOGIN</button>
             </div>
         </div>
     </header>
-    <!-- Fim cabeçalho -->
-    <!-- Início DIV principal -->
+
+    <!-- Conteúdo Principal -->
     <div id="principal">
         <div class="principal-esq">
+            <!-- Carrossel -->
             <div class="carousel">
                 <div class="carousel-imgs">
                     <img src="imgs/ambiental.png" alt="" class="carousel-item">
-                    <img src="imgs/ong.png" class="carousel-item">
-                    <img src="" alt="" class="carousel-item">
+                    <img src="imgs/ong.png" alt="" class="carousel-item">
+                    <img src="imgs/projeto.png" alt="" class="carousel-item">
                 </div>
             </div>
+
+            <!-- Informações da ONG -->
             <div class="info-ong">
                 <div class="conteiner-info">
                     <div class="header-nome-ong">
                         <h3>NOME DA ONG</h3>
                         <p>TIPO DA ONG</p>
                     </div>
-
-
                     <p class="arrecadacao">Arrecadado: R$ 50.000</p>
                     <p>87 Doações Recebidas</p>
                     <div class="btn-favoritos-compartilhar">
@@ -60,11 +60,13 @@
                         <button class="icon-compartilhar"><img src="imgs/share.png" alt="Icon de compartilhar"></button>
                     </div>
                     <div class="btn-info-ong">
-                        <button class="doacao" onclick="">Fazer uma doação</button>
+                        <button class="doacao">Fazer uma doação</button>
                         <button class="voluntario">Tornar-se Voluntário</button>
                     </div>
                 </div>
             </div>
+
+            <!-- Doadores -->
             <div class="doadores">
                 <div class="header-conteiner">
                     <img src="imgs/money.png" alt="Icon de cédulas de dinheiro">
@@ -107,21 +109,20 @@
                 </div>
                 <button class="ver-todos">VER TODOS</button>
             </div>
+
+            <!-- Sobre a ONG -->
             <div class="sobre">
-                <div>
-                    <div class="header-conteiner">
-                        <img src="imgs/interrogaction.png" alt="Icon de ponto de interrogação">
-                        <h3>Sobre</h3>
-                    </div>
-                    <p class="info-sobre">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium officiis
-                        incidunt magni et
-                        recusandae ipsam, pariatur hic illo in nesciunt consectetur, vel obcaecati maiores a dolorum
-                        nam,
-                        odio
-                        tempora ipsa!</p>
+                <div class="header-conteiner">
+                    <img src="imgs/interrogaction.png" alt="Icon de ponto de interrogação">
+                    <h3>Sobre</h3>
                 </div>
+                <p class="info-sobre">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium officiis
+                    incidunt magni et recusandae ipsam, pariatur hic illo in nesciunt consectetur, vel obcaecati maiores
+                    a dolorum nam, odio tempora ipsa!</p>
                 <p class="data-criacao"><strong>ONG criada em:</strong> 12/04/2023</p>
             </div>
+
+            <!-- Voluntários -->
             <div class="voluntarios">
                 <div class="header-conteiner">
                     <img src="imgs/hug.png" alt="Icon de abraço">
@@ -174,6 +175,8 @@
                 </div>
                 <button class="ver-todos">VER TODOS</button>
             </div>
+
+            <!-- Projetos -->
             <div class="projetos">
                 <div class="header-conteiner">
                     <img src="imgs/lamp.png" alt="Icon de Lampada">
@@ -211,6 +214,8 @@
                 </div>
                 <button class="ver-todos">VER TODOS</button>
             </div>
+
+            <!-- Notícias -->
             <div class="noticias">
                 <div class="header-conteiner">
                     <img src="imgs/noise.png" alt="Icon de Autofalante">
@@ -220,10 +225,8 @@
                     <div class="info-noticia">
                         <h4>Titulo da Matéria</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum accusamus eum mollitia
-                            recusandae
-                            sed repellat exercitationem quasi? Libero eius impedit excepturi adipisci autem mollitia
-                            totam,
-                            reiciendis laudantium. At, neque obcaecati.</p>
+                            recusandae sed repellat exercitationem quasi? Libero eius impedit excepturi adipisci autem
+                            mollitia totam, reiciendis laudantium. At, neque obcaecati.</p>
                         <div>
                             <p>Por: ONG Tal</p>
                             <button>Leia Mais</button>
@@ -235,10 +238,8 @@
                     <div class="info-noticia">
                         <h4>Titulo da Matéria</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum accusamus eum mollitia
-                            recusandae
-                            sed repellat exercitationem quasi? Libero eius impedit excepturi adipisci autem mollitia
-                            totam,
-                            reiciendis laudantium. At, neque obcaecati.</p>
+                            recusandae sed repellat exercitationem quasi? Libero eius impedit excepturi adipisci autem
+                            mollitia totam, reiciendis laudantium. At, neque obcaecati.</p>
                         <div>
                             <p>Por: ONG Tal</p>
                             <button>Leia Mais</button>
@@ -247,6 +248,8 @@
                     <img class="img-noticia" src="" alt="Imagem da noticias">
                 </div>
             </div>
+
+            <!-- Contato -->
             <div class="contato">
                 <div class="header-conteiner">
                     <img src="imgs/noise.png" alt="">
@@ -271,8 +274,23 @@
             </div>
         </div>
     </div>
+
+    <!-- Popup de Login -->
+    <div id="fundo-popup">
+        <div class="popup">
+            <div class="msg">
+                <p class="linha1">Olá, seja bem-vindo!</p>
+                <ul>
+                    <li><a href="#">Sou usuário</a></li>
+                    <li><a href="#">Sou uma ONG</a></li>
+                    <li><a href="#">Sou administrador</a></li>
+                </ul>
+            </div>
+            <img src="imgs/login.png" alt="Ilustração de Login">
+        </div>
+    </div>
+
     <script src="popup.js"></script>
-    <!-- Fim DIV principal  -->
 </body>
 
 </html>

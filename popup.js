@@ -1,20 +1,17 @@
-//Carousel//
+// Carrossel
 let currentIndex = 0;
 const items = document.querySelectorAll('.carousel-item');
 const totalItems = items.length;
 
 function changeSlide() {
-    currentIndex = (currentIndex + 1) % totalItems; 
+    currentIndex = (currentIndex + 1) % totalItems;
     const offset = -currentIndex * 100;
-
-    document.querySelector('.carousel-imgs').style.transform = `translateX(${offset}%)`; // Corrigido aqui
+    document.querySelector('.carousel-imgs').style.transform = `translateX(${offset}%)`;
 }
 
-setInterval(changeSlide, 3000); 
+setInterval(changeSlide, 3000);
 
-//fim carousel//
-
-// popup login //
+// Popup de Login
 const openPopup = document.getElementById('btn-login');
 const fundoPopup = document.getElementById('fundo-popup');
 
@@ -28,15 +25,21 @@ fundoPopup.addEventListener('click', (event) => {
     }
 });
 
-//fim popup login//
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && fundoPopup.classList.contains('ativo')) {
+        fundoPopup.classList.remove('ativo');
+    }
+});
 
-//Voltar ao inicio//
+const btnMaisTarde = document.querySelector('.btn-maistarde');
+btnMaisTarde.addEventListener('click', () => {
+    fundoPopup.classList.remove('ativo');
+});
+
+// Voltar ao Topo
 function voltarParaTelaInicial() {
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
-    setTimeout(function() {
-        window.location.href = 'tela-projeto.html';
-    }, 500);}
-    //Fim do voltar ao inicio3//
+}
